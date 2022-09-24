@@ -113,9 +113,11 @@ body {
       rgba(47, 48, 58, 0.4) 100%
     ),
     url(../images/banner_background.jpg);
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
   height: 600px;
   margin: auto;
+  background-position: center;
 }
 .banner__text {
   color: var(--white);
@@ -225,7 +227,7 @@ body {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.team_social {
+.team_social_links {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -260,47 +262,44 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  /* width max i %? */
 }
-.footer_logo {
+.footer__logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--black);
-  padding-bottom: 20px;
 }
-.footer_item {
+.footer__items {
   display: flex;
   padding-top: 60px;
   flex-direction: column;
-  gap: 9px;
   padding-bottom: 60px;
 }
-.footer_contacts {
+.footer__contacts {
+  margin-top: 20px;
+}
+.footer__contacts,
+.footer__contacts-list {
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
-/* .footer_contacts-box {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-  padding-bottom: 60px;
-} */
 .address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
 }
-.footer_socials {
+.footer__socials {
   padding: 72px 0 100px 70px;
 }
-.footer_socials__items {
+.footer__socials__items {
   display: flex;
   gap: 10px;
   fill: var(--white);
 }
-.footer_socials__title {
+.footer__socials__title {
   padding-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -394,6 +393,7 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: white;
+  fill: var(--fill);
 }
 .icon-social2 {
   width: 44px;
