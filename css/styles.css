@@ -297,7 +297,6 @@ body {
 .footer__socials__items {
   display: flex;
   gap: 10px;
-  fill: var(--white);
 }
 .footer__socials__title {
   padding-bottom: 20px;
@@ -377,14 +376,15 @@ body {
   border: 1px solid var(--fill);
   border-radius: 4px;
 }
-.icon-logo:hover {
+.icon-logo:hover,
+.our_clients__link:focus .icon-logo {
   fill: var(--brand_color);
   border: 1px solid var(--brand_color);
 }
 .contacts__items:hover .icon-envelope,
 .contacts__items:hover .icon-smartphone,
-.contacts__items:focus .icon-envelope,
-.contacts__items:focus .icon-smartphone {
+.contacts__items:focus,
+.contacts__items:focus {
   fill: var(--brand_color);
   cursor: pointer;
 }
@@ -400,11 +400,12 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff1a;
+  fill: var(--white);
 }
 .icon-social:hover,
-.icon-social:focus,
 .icon-social2:hover,
-.icon-social2:focus {
+.team_social_links__item:focus .icon-social,
+.footer__socials__link:focus .icon-social2 {
   background-color: var(--brand_color);
   fill: var(--white);
   cursor: pointer;
